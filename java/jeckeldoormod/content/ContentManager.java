@@ -35,6 +35,7 @@ public class ContentManager
 		Items.iron_door.setMaxStackSize(64);
 
 		MappedCreativeTab tab = new MappedCreativeTab(Refs.ModId);
+		tab.setIconItemStack(new ItemStack(Items.wooden_door));
 
 		tab.addItem(Refs.ModId, Items.wooden_door);
 
@@ -98,8 +99,6 @@ public class ContentManager
 			trapdoors_colored_solid[index] = TrapdoorBuilder.createColoredSolid(name, index);
 			tab.addMisc(Refs.ModId, trapdoors_colored_solid[index].block);
 		}
-
-		tab.setIconItemStack(new ItemStack(doors_colored_glass[0].item));
 	}
 
 	public void initialize()
