@@ -1,0 +1,25 @@
+{
+	"modListVersion": 2,
+	"modList":
+	[
+		{
+			"modid": "jeckeldoormod",
+			"name": "JeckelDoorMod",
+			"description": "JeckelDoorMod adds a door and trapdoor for each of the wood types that are currently missing them and for each of the 16 Minecraft colors.",
+			"version": "${version}",
+			"mcversion": "${mcversion}",
+			"forgeversion": "${forgeversion}",
+			"url": "http://minecraft.jeckelland.site88.net/mods/${name}/",
+			"updateUrl": "",
+			"authorList": ["JayJeckel"],
+			"credits": "",
+			"logoFile": "banner.png",
+			"screenshots": [],
+			"parent": "",
+			"requiredMods": [ "Forge" ],
+			"dependencies": [],
+			"dependants": [],
+			"useDependencyInformation": true
+		}
+	]
+}
