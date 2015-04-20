@@ -36,12 +36,16 @@ public class ContentManager
 
 		MappedCreativeTab tab = new MappedCreativeTab(Refs.ModId);
 
+		tab.addItem(Refs.ModId, Items.wooden_door);
+
 		for (int index = 0; index < woods.length; index++)
 		{
 			final String name = "door_planks_" + woods[index];
 			doors_wood[index] = DoorBuilder.createWood(name, index);
 			tab.addItem(Refs.ModId, doors_wood[index].item);
 		}
+
+		tab.addItem(Refs.ModId, Items.iron_door);
 
 		for (int index = 0; index < colors.length; index++)
 		{
@@ -64,6 +68,8 @@ public class ContentManager
 			tab.addItem(Refs.ModId, doors_colored_solid[index].item);
 		}
 
+
+		tab.addMisc(Refs.ModId, Blocks.trapdoor);
 
 		for (int index = 0; index < woods.length; index++)
 		{
